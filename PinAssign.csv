@@ -1,0 +1,77 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# File: C:\Users\shimada\Desktop\PinAssign.csv
+# Generated on: Wed Jan 22 12:02:16 2014
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+btn[2],Input,PIN_F1,1,B1_N0,PIN_F1,,,,,
+btn[1],Input,PIN_G3,1,B1_N0,PIN_G3,,,,,
+btn[0],Input,PIN_H2,1,B1_N1,PIN_H2,,,,,
+clk,Input,PIN_G21,6,B6_N1,PIN_G21,,,,,
+hex0[7],Output,PIN_D13,7,B7_N1,PIN_D13,,,,,
+hex0[6],Output,PIN_F13,7,B7_N1,PIN_F13,,,,,
+hex0[5],Output,PIN_F12,7,B7_N1,PIN_F12,,,,,
+hex0[4],Output,PIN_G12,7,B7_N1,PIN_G12,,,,,
+hex0[3],Output,PIN_H13,7,B7_N1,PIN_H13,,,,,
+hex0[2],Output,PIN_H12,7,B7_N1,PIN_H12,,,,,
+hex0[1],Output,PIN_F11,7,B7_N1,PIN_F11,,,,,
+hex0[0],Output,PIN_E11,7,B7_N1,PIN_E11,,,,,
+hex1[7],Output,PIN_B15,7,B7_N1,PIN_B15,,,,,
+hex1[6],Output,PIN_A15,7,B7_N1,PIN_A15,,,,,
+hex1[5],Output,PIN_E14,7,B7_N1,PIN_E14,,,,,
+hex1[4],Output,PIN_B14,7,B7_N1,PIN_B14,,,,,
+hex1[3],Output,PIN_A14,7,B7_N1,PIN_A14,,,,,
+hex1[2],Output,PIN_C13,7,B7_N1,PIN_C13,,,,,
+hex1[1],Output,PIN_B13,7,B7_N1,PIN_B13,,,,,
+hex1[0],Output,PIN_A13,7,B7_N1,PIN_A13,,,,,
+hex2[7],Output,PIN_A18,7,B7_N0,PIN_A18,,,,,
+hex2[6],Output,PIN_F14,7,B7_N0,PIN_F14,,,,,
+hex2[5],Output,PIN_B17,7,B7_N1,PIN_B17,,,,,
+hex2[4],Output,PIN_A17,7,B7_N1,PIN_A17,,,,,
+hex2[3],Output,PIN_E15,7,B7_N0,PIN_E15,,,,,
+hex2[2],Output,PIN_B16,7,B7_N1,PIN_B16,,,,,
+hex2[1],Output,PIN_A16,7,B7_N1,PIN_A16,,,,,
+hex2[0],Output,PIN_D15,7,B7_N0,PIN_D15,,,,,
+hex3[7],Output,PIN_G16,7,B7_N0,PIN_G16,,,,,
+hex3[6],Output,PIN_G15,7,B7_N0,PIN_G15,,,,,
+hex3[5],Output,PIN_D19,7,B7_N0,PIN_D19,,,,,
+hex3[4],Output,PIN_C19,7,B7_N0,PIN_C19,,,,,
+hex3[3],Output,PIN_B19,7,B7_N0,PIN_B19,,,,,
+hex3[2],Output,PIN_A19,7,B7_N0,PIN_A19,,,,,
+hex3[1],Output,PIN_F15,7,B7_N0,PIN_F15,,,,,
+hex3[0],Output,PIN_B18,7,B7_N0,PIN_B18,,,,,
+led[9],Output,PIN_B1,1,B1_N0,PIN_B1,,,,,
+led[8],Output,PIN_B2,1,B1_N0,PIN_B2,,,,,
+led[7],Output,PIN_C2,1,B1_N0,PIN_C2,,,,,
+led[6],Output,PIN_C1,1,B1_N0,PIN_C1,,,,,
+led[5],Output,PIN_E1,1,B1_N0,PIN_E1,,,,,
+led[4],Output,PIN_F2,1,B1_N0,PIN_F2,,,,,
+led[3],Output,PIN_H1,1,B1_N1,PIN_H1,,,,,
+led[2],Output,PIN_J3,1,B1_N1,PIN_J3,,,,,
+led[1],Output,PIN_J2,1,B1_N1,PIN_J2,,,,,
+led[0],Output,PIN_J1,1,B1_N1,PIN_J1,,,,,
+sw[9],Input,PIN_D2,1,B1_N0,PIN_D2,,,,,
+sw[8],Input,PIN_E4,1,B1_N0,PIN_E4,,,,,
+sw[7],Input,PIN_E3,1,B1_N0,PIN_E3,,,,,
+sw[6],Input,PIN_H7,1,B1_N0,PIN_H7,,,,,
+sw[5],Input,PIN_J7,1,B1_N1,PIN_J7,,,,,
+sw[4],Input,PIN_G5,1,B1_N0,PIN_G5,,,,,
+sw[3],Input,PIN_G4,1,B1_N0,PIN_G4,,,,,
+sw[2],Input,PIN_H6,1,B1_N0,PIN_H6,,,,,
+sw[1],Input,PIN_H5,1,B1_N0,PIN_H5,,,,,
+sw[0],Input,PIN_J6,1,B1_N0,PIN_J6,,,,,

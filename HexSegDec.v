@@ -15,6 +15,7 @@
 
 
 module HexSegDec (
+  input  en             // Enable
   input  [3:0] value,   // Decimal Value (0~9), Dot(10), E(11), OFF(12~15)
   output [7:0] seg      // 7-Segment Display with decimal point
 );
@@ -43,7 +44,7 @@ module HexSegDec (
     end
   endfunction
 
-  assign  seg = LedDec(value);
+  assign  seg = (en) ? LedDec(value) : 8'b11111111;
 
 
 endmodule

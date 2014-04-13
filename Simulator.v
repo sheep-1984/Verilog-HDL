@@ -7,7 +7,7 @@
 //  Version :        1.0.0
 //  HDL :            Verilog-HDL 2001
 //  Tool version :   Icarus Verilog  (Version 0.9.7)
-//                   GTKWave  (Version 3.3.54)
+//                   GTKWave  (Version 3.3.57)
 //                   XQuartz  (Version 2.7.5)
 //  Description :    シミュレーション用のテンプレート
 //
@@ -19,14 +19,15 @@
 
 module Simulator;
 
-  parameter  CYCLE      = 20;
-  parameter  HALF_CYCLE = 10;
-  parameter  DELAY      = 10;
+  parameter  CYCLE      = 20;     // Clock Cycle
+  parameter  HALF_CYCLE = 10;     // Clock half-Cycle
+  parameter  DELAY      = 10;     // Racing measures
 
   reg  clk;
   reg  rst;
-  reg  btn;
-  wire btn_out;
+  reg  ***;   <- Add Input
+  wire ***;   <- Add Output Pin
+
 
   /*   Clock Generate (50MHz)   */
   always begin
@@ -37,23 +38,20 @@ module Simulator;
 
 
   /*   Calling of the modules   */
-  Chattering Simulation (clk, rst, btn, btn_out);
+  Simulator Simulation (clk, rst, ***, ***);    <- Rewrite Use Module
 
 
   initial begin
     /*   Icarus Verilog   */
     $dumpfile("out.vcd");
-    $dumpvars(0, clk, rst, btn, btn_out);
+    $dumpvars(0, clk, rst, ***, ***);   <- Rewrite Measure of Pin
 
-    rst = 1'b1;     btn = 1'b1;
+    rst = 1'b1;
     #DELAY;         // Racing measures
-    #100            rst = 1'b0;
-    #100            rst = 1'b1;
-    #300            btn = 1'b0;         #10         btn = 1'b1;
-    #20             btn = 1'b0;         #30         btn = 1'b1;
-    #30             btn = 1'b0;         #20         btn = 1'b1;
-    #50             btn = 1'b0;         #10         btn = 1'b1;
-    #(300000*CYCLE)    $finish;
+    #100            rst = 1'b0;   // Reset ON
+    #100            rst = 1'b1;   // Reset OFF
+        <-   Write Simulation of input   ->
+    #(10*CYCLE)    $finish;
   end
 
 

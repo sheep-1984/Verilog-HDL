@@ -15,8 +15,8 @@
 
 
 module HexSegDec (
-  input  rst,           // Asynchronous reset active low
   input  en,            // Enable
+  input  rst,           // Asynchronous reset active low
   input  [3:0] value,   // Decimal Value (0~9), Dot(10), E(11), OFF(12~15)
   output [7:0] seg      // 7-Segment Display with decimal point
 );

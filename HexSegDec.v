@@ -3,8 +3,8 @@
 //  Module Name :    HexSegDec
 //  Designer :       Shimada
 //  Create Date :    2013/02/07
-//  Update Date :    2014/02/14
-//  Version :        1.0.0
+//  Update Date :    2014/04/13
+//  Version :        1.0.1
 //  HDL :            Verilog-HDL 2001
 //  Target Device :  DE0
 //  Tool version :   Quartus II Web Edition (Version 13.1)
@@ -15,7 +15,8 @@
 
 
 module HexSegDec (
-  input  en             // Enable
+  input  rst,           // Asynchronous reset active low
+  input  en,            // Enable
   input  [3:0] value,   // Decimal Value (0~9), Dot(10), E(11), OFF(12~15)
   output [7:0] seg      // 7-Segment Display with decimal point
 );
@@ -44,7 +45,8 @@ module HexSegDec (
     end
   endfunction
 
-  assign  seg = (en) ? LedDec(value) : 8'b11111111;
+  assign  seg = (~rst) ? 8'b00000000 :
+                  (en) ? LedDec(value) : 8'b11111111;
 
 
 endmodule

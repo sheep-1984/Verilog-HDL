@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SegDecCount
-Sun Apr 13 14:17:12 2014
+Mon Apr 14 23:34:32 2014
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -52,13 +52,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 13 14:17:12 2014      ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 14 23:34:32 2014      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; SegDecCount                                ;
 ; Top-level Entity Name              ; SegDecCount                                ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 367                                        ;
-;     Total combinational functions  ; 350                                        ;
+; Total logic elements               ; 374                                        ;
+;     Total combinational functions  ; 357                                        ;
 ;     Dedicated logic registers      ; 114                                        ;
 ; Total registers                    ; 114                                        ;
 ; Total pins                         ; 50                                         ;
@@ -212,16 +212,16 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 367       ;
+; Estimated Total logic elements              ; 374       ;
 ;                                             ;           ;
-; Total combinational functions               ; 350       ;
+; Total combinational functions               ; 357       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 134       ;
-;     -- 3 input functions                    ; 34        ;
-;     -- <=2 input functions                  ; 182       ;
+;     -- 4 input functions                    ; 159       ;
+;     -- 3 input functions                    ; 61        ;
+;     -- <=2 input functions                  ; 137       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 242       ;
+;     -- normal mode                          ; 249       ;
 ;     -- arithmetic mode                      ; 108       ;
 ;                                             ;           ;
 ; Total registers                             ; 114       ;
@@ -232,8 +232,8 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; rst~input ;
 ; Maximum fan-out                             ; 146       ;
-; Total fan-out                               ; 1448      ;
-; Average fan-out                             ; 2.57      ;
+; Total fan-out                               ; 1539      ;
+; Average fan-out                             ; 2.70      ;
 +---------------------------------------------+-----------+
 
 
@@ -242,28 +242,28 @@ applicable agreement for further details.
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                               ; Library Name ;
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------+--------------+
-; |SegDecCount                    ; 350 (41)          ; 114 (0)      ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |SegDecCount                                                                      ; work         ;
-;    |BcdCountSegDisplay:digit0|  ; 87 (0)            ; 30 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit0                                            ; work         ;
+; |SegDecCount                    ; 357 (41)          ; 114 (0)      ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |SegDecCount                                                                      ; work         ;
+;    |BcdCountSegDisplay:digit0|  ; 90 (0)            ; 30 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit0                                            ; work         ;
 ;       |BcdCounter:DecCounter|   ; 11 (4)            ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit0|BcdCounter:DecCounter                      ; work         ;
 ;          |HexSegDec:DisplaySeg| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit0|BcdCounter:DecCounter|HexSegDec:DisplaySeg ; work         ;
-;       |SegBlink:SegBlinking|    ; 76 (9)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit0|SegBlink:SegBlinking                       ; work         ;
-;          |Clk_div:blink_clk|    ; 67 (67)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk     ; work         ;
-;    |BcdCountSegDisplay:digit1|  ; 20 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit1                                            ; work         ;
+;       |SegBlink:SegBlinking|    ; 79 (10)           ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit0|SegBlink:SegBlinking                       ; work         ;
+;          |Clk_div:blink_clk|    ; 69 (69)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk     ; work         ;
+;    |BcdCountSegDisplay:digit1|  ; 21 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit1                                            ; work         ;
 ;       |BcdCounter:DecCounter|   ; 11 (4)            ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit1|BcdCounter:DecCounter                      ; work         ;
 ;          |HexSegDec:DisplaySeg| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit1|BcdCounter:DecCounter|HexSegDec:DisplaySeg ; work         ;
-;       |SegBlink:SegBlinking|    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit1|SegBlink:SegBlinking                       ; work         ;
-;    |BcdCountSegDisplay:digit2|  ; 20 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit2                                            ; work         ;
+;       |SegBlink:SegBlinking|    ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit1|SegBlink:SegBlinking                       ; work         ;
+;    |BcdCountSegDisplay:digit2|  ; 21 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit2                                            ; work         ;
 ;       |BcdCounter:DecCounter|   ; 12 (4)            ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit2|BcdCounter:DecCounter                      ; work         ;
 ;          |HexSegDec:DisplaySeg| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit2|BcdCounter:DecCounter|HexSegDec:DisplaySeg ; work         ;
-;       |SegBlink:SegBlinking|    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit2|SegBlink:SegBlinking                       ; work         ;
-;    |BcdCountSegDisplay:digit3|  ; 20 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit3                                            ; work         ;
+;       |SegBlink:SegBlinking|    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit2|SegBlink:SegBlinking                       ; work         ;
+;    |BcdCountSegDisplay:digit3|  ; 21 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit3                                            ; work         ;
 ;       |BcdCounter:DecCounter|   ; 12 (4)            ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit3|BcdCounter:DecCounter                      ; work         ;
 ;          |HexSegDec:DisplaySeg| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit3|BcdCounter:DecCounter|HexSegDec:DisplaySeg ; work         ;
-;       |SegBlink:SegBlinking|    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit3|SegBlink:SegBlinking                       ; work         ;
+;       |SegBlink:SegBlinking|    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|BcdCountSegDisplay:digit3|SegBlink:SegBlinking                       ; work         ;
 ;    |Chattering:btn0_chatter|    ; 73 (8)            ; 34 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|Chattering:btn0_chatter                                              ; work         ;
 ;       |Clk_div:gene_1khz|       ; 65 (65)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|Chattering:btn0_chatter|Clk_div:gene_1khz                            ; work         ;
-;    |Chattering:btn1_chatter|    ; 73 (8)            ; 34 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|Chattering:btn1_chatter                                              ; work         ;
-;       |Clk_div:gene_1khz|       ; 65 (65)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|Chattering:btn1_chatter|Clk_div:gene_1khz                            ; work         ;
+;    |Chattering:btn1_chatter|    ; 74 (8)            ; 34 (8)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|Chattering:btn1_chatter                                              ; work         ;
+;       |Clk_div:gene_1khz|       ; 66 (66)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|Chattering:btn1_chatter|Clk_div:gene_1khz                            ; work         ;
 ;    |DigitMove:DigitShift|       ; 1 (1)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|DigitMove:DigitShift                                                 ; work         ;
 ;    |lpm_mult:Mult0|             ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|lpm_mult:Mult0                                                       ; work         ;
 ;       |multcore:mult_core|      ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SegDecCount|lpm_mult:Mult0|multcore:mult_core                                    ; work         ;
@@ -392,18 +392,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------------------------------------------+---------+
 ; Inverted Register                                                        ; Fan out ;
 +--------------------------------------------------------------------------+---------+
-; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[25] ; 6       ;
-; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[17] ; 4       ;
-; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[22] ; 2       ;
-; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[21] ; 2       ;
-; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[20] ; 2       ;
-; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[19] ; 2       ;
+; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[25] ; 7       ;
+; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[22] ; 3       ;
+; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[21] ; 3       ;
+; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[17] ; 3       ;
 ; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[14] ; 3       ;
-; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[13] ; 3       ;
 ; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[12] ; 3       ;
-; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[7]  ; 2       ;
-; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[15] ; 3       ;
-; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[23] ; 4       ;
+; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[11] ; 3       ;
+; BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[9]  ; 3       ;
 ; Chattering:btn1_chatter|btn_buff[6]                                      ; 3       ;
 ; Chattering:btn1_chatter|btn_buff[5]                                      ; 3       ;
 ; Chattering:btn1_chatter|btn_buff[4]                                      ; 3       ;
@@ -422,17 +418,17 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Chattering:btn0_chatter|btn_buff[0]                                      ; 3       ;
 ; Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[15]                        ; 3       ;
 ; Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[9]                         ; 3       ;
-; Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[14]                        ; 3       ;
-; Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[8]                         ; 3       ;
 ; Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[6]                         ; 3       ;
 ; Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[4]                         ; 3       ;
+; Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[8]                         ; 3       ;
+; Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[14]                        ; 3       ;
 ; Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[15]                        ; 3       ;
 ; Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[9]                         ; 3       ;
 ; Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[14]                        ; 3       ;
 ; Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[8]                         ; 3       ;
 ; Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[6]                         ; 3       ;
 ; Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[4]                         ; 3       ;
-; Total number of inverted registers = 40                                  ;         ;
+; Total number of inverted registers = 36                                  ;         ;
 +--------------------------------------------------------------------------+---------+
 
 
@@ -441,9 +437,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |SegDecCount|BcdCountSegDisplay:digit0|SegBlink:SegBlinking|seg_out[1] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |SegDecCount|BcdCountSegDisplay:digit1|SegBlink:SegBlinking|seg_out[7] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |SegDecCount|BcdCountSegDisplay:digit2|SegBlink:SegBlinking|seg_out[0] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |SegDecCount|BcdCountSegDisplay:digit0|SegBlink:SegBlinking|seg_out[0] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |SegDecCount|BcdCountSegDisplay:digit1|SegBlink:SegBlinking|seg_out[0] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |SegDecCount|BcdCountSegDisplay:digit2|SegBlink:SegBlinking|seg_out[7] ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |SegDecCount|BcdCountSegDisplay:digit3|SegBlink:SegBlinking|seg_out[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------+
 
@@ -574,16 +570,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+-------+----------+-------------------------------------------------------------+
 ; Port        ; Type  ; Severity ; Details                                                     ;
 +-------------+-------+----------+-------------------------------------------------------------+
-; div[23..19] ; Input ; Info     ; Stuck at VCC                                                ;
-; div[15..12] ; Input ; Info     ; Stuck at VCC                                                ;
-; div[11..8]  ; Input ; Info     ; Stuck at GND                                                ;
-; div[6..0]   ; Input ; Info     ; Stuck at GND                                                ;
+; div[22..21] ; Input ; Info     ; Stuck at VCC                                                ;
+; div[12..11] ; Input ; Info     ; Stuck at VCC                                                ;
+; div[24..23] ; Input ; Info     ; Stuck at GND                                                ;
+; div[20..18] ; Input ; Info     ; Stuck at GND                                                ;
+; div[16..15] ; Input ; Info     ; Stuck at GND                                                ;
+; div[8..0]   ; Input ; Info     ; Stuck at GND                                                ;
 ; div[25]     ; Input ; Info     ; Stuck at VCC                                                ;
-; div[24]     ; Input ; Info     ; Stuck at GND                                                ;
-; div[18]     ; Input ; Info     ; Stuck at GND                                                ;
 ; div[17]     ; Input ; Info     ; Stuck at VCC                                                ;
-; div[16]     ; Input ; Info     ; Stuck at GND                                                ;
-; div[7]      ; Input ; Info     ; Stuck at VCC                                                ;
+; div[14]     ; Input ; Info     ; Stuck at VCC                                                ;
+; div[13]     ; Input ; Info     ; Stuck at GND                                                ;
+; div[10]     ; Input ; Info     ; Stuck at GND                                                ;
+; div[9]      ; Input ; Info     ; Stuck at VCC                                                ;
 +-------------+-------+----------+-------------------------------------------------------------+
 
 
@@ -619,7 +617,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Apr 13 14:17:10 2014
+    Info: Processing started: Mon Apr 14 23:34:30 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SegDecCount -c SegDecCount
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file segdeccount.v
@@ -685,17 +683,13 @@ Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Critical Warning (18061): Ignored Power-Up Level option on the following registers
     Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[25] will power up to High
-    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[23] will power up to High
-    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[17] will power up to High
-    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[15] will power up to High
-    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[7] will power up to High
-    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[14] will power up to High
-    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[13] will power up to High
-    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[12] will power up to High
     Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[22] will power up to High
     Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[21] will power up to High
-    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[20] will power up to High
-    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[19] will power up to High
+    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[17] will power up to High
+    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[14] will power up to High
+    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[12] will power up to High
+    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[11] will power up to High
+    Critical Warning (18010): Register BcdCountSegDisplay:digit0|SegBlink:SegBlinking|Clk_div:blink_clk|cnt[9] will power up to High
     Critical Warning (18010): Register Chattering:btn0_chatter|btn_buff[7] will power up to High
     Critical Warning (18010): Register Chattering:btn1_chatter|btn_buff[7] will power up to High
     Critical Warning (18010): Register Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[15] will power up to High
@@ -713,13 +707,13 @@ Critical Warning (18061): Ignored Power-Up Level option on the following registe
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 417 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 424 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 46 output pins
-    Info (21061): Implemented 367 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 503 megabytes
-    Info: Processing ended: Sun Apr 13 14:17:12 2014
+    Info (21061): Implemented 374 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 507 megabytes
+    Info: Processing ended: Mon Apr 14 23:34:32 2014
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 

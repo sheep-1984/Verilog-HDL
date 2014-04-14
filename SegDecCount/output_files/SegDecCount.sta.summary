@@ -3,43 +3,43 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -3.279
-TNS   : -218.186
+Slack : -2.766
+TNS   : -183.212
 
 Type  : Slow 1200mV 85C Model Setup 'Chattering:btn1_chatter|btn_cp'
-Slack : -1.279
-TNS   : -16.160
+Slack : -1.093
+TNS   : -12.880
 
 Type  : Slow 1200mV 85C Model Setup 'Chattering:btn0_chatter|btn_cp'
-Slack : -0.206
-TNS   : -0.206
+Slack : -0.075
+TNS   : -0.075
+
+Type  : Slow 1200mV 85C Model Setup 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
+Slack : 0.224
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[10]'
 Slack : 0.224
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
-Slack : 0.225
-TNS   : 0.000
-
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : -0.383
-TNS   : -3.964
+Slack : -0.386
+TNS   : -5.142
 
 Type  : Slow 1200mV 85C Model Hold 'Chattering:btn1_chatter|btn_cp'
-Slack : 0.345
+Slack : 0.344
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Chattering:btn0_chatter|btn_cp'
 Slack : 0.362
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[10]'
-Slack : 0.395
+Type  : Slow 1200mV 85C Model Hold 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
+Slack : 0.394
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
-Slack : 0.396
+Type  : Slow 1200mV 85C Model Hold 'Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[10]'
+Slack : 0.394
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
@@ -63,19 +63,19 @@ Slack : -1.000
 TNS   : -4.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -2.784
-TNS   : -186.628
+Slack : -2.425
+TNS   : -155.916
 
 Type  : Slow 1200mV 0C Model Setup 'Chattering:btn1_chatter|btn_cp'
-Slack : -1.128
-TNS   : -14.184
+Slack : -0.940
+TNS   : -10.976
 
 Type  : Slow 1200mV 0C Model Setup 'Chattering:btn0_chatter|btn_cp'
-Slack : -0.077
-TNS   : -0.077
+Slack : 0.039
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
-Slack : 0.309
+Slack : 0.310
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[10]'
@@ -83,22 +83,22 @@ Slack : 0.310
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : -0.419
-TNS   : -5.445
+Slack : -0.350
+TNS   : -7.422
 
 Type  : Slow 1200mV 0C Model Hold 'Chattering:btn1_chatter|btn_cp'
-Slack : 0.300
+Slack : 0.299
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Chattering:btn0_chatter|btn_cp'
-Slack : 0.320
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
-Slack : 0.356
+Slack : 0.319
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[10]'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
 Slack : 0.357
 TNS   : 0.000
 
@@ -123,28 +123,28 @@ Slack : -1.000
 TNS   : -4.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -1.474
-TNS   : -91.300
+Slack : -1.109
+TNS   : -69.133
 
 Type  : Fast 1200mV 0C Model Setup 'Chattering:btn1_chatter|btn_cp'
-Slack : -0.491
-TNS   : -5.232
+Slack : -0.387
+TNS   : -3.440
 
 Type  : Fast 1200mV 0C Model Setup 'Chattering:btn0_chatter|btn_cp'
-Slack : 0.321
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
-Slack : 0.564
+Slack : 0.399
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[10]'
 Slack : 0.565
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Setup 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
+Slack : 0.566
+TNS   : 0.000
+
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : -0.282
-TNS   : -3.900
+Slack : -0.325
+TNS   : -6.946
 
 Type  : Fast 1200mV 0C Model Hold 'Chattering:btn1_chatter|btn_cp'
 Slack : 0.177
@@ -154,17 +154,17 @@ Type  : Fast 1200mV 0C Model Hold 'Chattering:btn0_chatter|btn_cp'
 Slack : 0.195
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
+Type  : Fast 1200mV 0C Model Hold 'Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[10]'
 Slack : 0.205
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Chattering:btn1_chatter|Clk_div:gene_1khz|cnt[10]'
+Type  : Fast 1200mV 0C Model Hold 'Chattering:btn0_chatter|Clk_div:gene_1khz|cnt[10]'
 Slack : 0.206
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -84.030
+TNS   : -82.976
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Chattering:btn1_chatter|btn_cp'
 Slack : -1.000

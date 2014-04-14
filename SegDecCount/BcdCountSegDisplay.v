@@ -1,3 +1,20 @@
+//  ----------------------------------------------------------------------
+//
+//  Module Name :    BcdCountSegDisplay
+//  Designer :       Shimada
+//  Create Date :    2014/04/13
+//  Update Date :    2014/04/13
+//  Version :        1.0.0
+//  HDL :            Verilog-HDL 2001
+//  Target Device :  DE0
+//  Tool version :   Quartus II Web Edition (Version 13.1)
+//  Description :    ボタンを押す毎にカウントアップするBCDカウンタ
+//                   WriteEnableがONのとき, セグメントが点滅してカウントアップする
+//
+//  ----------------------------------------------------------------------
+
+
+
 module BcdCountSegDisplay (
   input  clk,           // Clock
   input  en,            // Enable

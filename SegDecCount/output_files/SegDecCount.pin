@@ -76,8 +76,8 @@ RESERVED_INPUT               : A5        :        :                   :         
 RESERVED_INPUT               : A6        :        :                   :         : 8         :                
 RESERVED_INPUT               : A7        :        :                   :         : 8         :                
 RESERVED_INPUT               : A8        :        :                   :         : 8         :                
-count_value[7]               : A9        : output : 2.5 V             :         : 8         : N              
-count_value[4]               : A10       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : A9        :        :                   :         : 8         :                
+RESERVED_INPUT               : A10       :        :                   :         : 8         :                
 GND+                         : A11       :        :                   :         : 8         :                
 GND+                         : A12       :        :                   :         : 7         :                
 seg1[0]                      : A13       : output : 2.5 V             :         : 7         : Y              
@@ -87,7 +87,7 @@ seg2[1]                      : A16       : output : 2.5 V             :         
 seg2[4]                      : A17       : output : 2.5 V             :         : 7         : Y              
 seg2[7]                      : A18       : output : 2.5 V             :         : 7         : Y              
 seg3[2]                      : A19       : output : 2.5 V             :         : 7         : Y              
-count_value[3]               : A20       : output : 2.5 V             :         : 7         : N              
+count_value[12]              : A20       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A21       : power  :                   : 2.5V    : 7         :                
 GND                          : A22       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AA1       :        :                   :         : 2         :                
@@ -153,7 +153,7 @@ seg2[2]                      : B16       : output : 2.5 V             :         
 seg2[5]                      : B17       : output : 2.5 V             :         : 7         : Y              
 seg3[0]                      : B18       : output : 2.5 V             :         : 7         : Y              
 seg3[3]                      : B19       : output : 2.5 V             :         : 7         : Y              
-RESERVED_INPUT               : B20       :        :                   :         : 7         :                
+count_value[6]               : B20       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT               : B21       :        :                   :         : 6         :                
 RESERVED_INPUT               : B22       :        :                   :         : 6         :                
 RESERVED_INPUT               : C1        :        :                   :         : 1         :                
@@ -170,14 +170,14 @@ GND                          : C11       : gnd    :                   :         
 GND                          : C12       : gnd    :                   :         :           :                
 seg1[2]                      : C13       : output : 2.5 V             :         : 7         : Y              
 GND                          : C14       : gnd    :                   :         :           :                
-count_value[0]               : C15       : output : 2.5 V             :         : 7         : N              
+count_value[13]              : C15       : output : 2.5 V             :         : 7         : N              
 GND                          : C16       : gnd    :                   :         :           :                
-count_value[6]               : C17       : output : 2.5 V             :         : 7         : N              
+count_value[1]               : C17       : output : 2.5 V             :         : 7         : N              
 GND                          : C18       : gnd    :                   :         :           :                
 seg3[4]                      : C19       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT               : C20       :        :                   :         : 6         :                
-count_value[12]              : C21       : output : 2.5 V             :         : 6         : N              
-count_value[11]              : C22       : output : 2.5 V             :         : 6         : N              
+count_value[10]              : C21       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : C22       :        :                   :         : 6         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D1        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT               : D2        :        :                   :         : 1         :                
 GND                          : D3        : gnd    :                   :         :           :                
@@ -187,14 +187,14 @@ RESERVED_INPUT               : D6        :        :                   :         
 GND                          : D7        : gnd    :                   :         :           :                
 GND                          : D8        : gnd    :                   :         :           :                
 VCCIO8                       : D9        : power  :                   : 2.5V    : 8         :                
-count_value[1]               : D10       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : D10       :        :                   :         : 8         :                
 VCCIO8                       : D11       : power  :                   : 2.5V    : 8         :                
 VCCIO7                       : D12       : power  :                   : 2.5V    : 7         :                
 seg0[7]                      : D13       : output : 2.5 V             :         : 7         : Y              
 VCCIO7                       : D14       : power  :                   : 2.5V    : 7         :                
 seg2[0]                      : D15       : output : 2.5 V             :         : 7         : Y              
 VCCIO7                       : D16       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT               : D17       :        :                   :         : 7         :                
+count_value[5]               : D17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : D18       : power  :                   : 2.5V    : 7         :                
 seg3[5]                      : D19       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT               : D20       :        :                   :         : 6         :                
@@ -209,10 +209,10 @@ RESERVED_INPUT               : E6        :        :                   :         
 RESERVED_INPUT               : E7        :        :                   :         : 8         :                
 VCCIO8                       : E8        : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT               : E9        :        :                   :         : 8         :                
-count_value[10]              : E10       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT               : E10       :        :                   :         : 8         :                
 seg0[0]                      : E11       : output : 2.5 V             :         : 7         : Y              
-count_value[5]               : E12       : output : 2.5 V             :         : 7         : N              
-count_value[9]               : E13       : output : 2.5 V             :         : 7         : N              
+count_value[11]              : E12       : output : 2.5 V             :         : 7         : N              
+count_value[7]               : E13       : output : 2.5 V             :         : 7         : N              
 seg1[5]                      : E14       : output : 2.5 V             :         : 7         : Y              
 seg2[3]                      : E15       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT               : E16       :        :                   :         : 7         :                
@@ -220,7 +220,7 @@ VCCD_PLL2                    : E17       : power  :                   : 1.2V    
 GNDA2                        : E18       : gnd    :                   :         :           :                
 VCCIO6                       : E19       : power  :                   : 2.5V    : 6         :                
 GND                          : E20       : gnd    :                   :         :           :                
-count_value[8]               : E21       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT               : E21       :        :                   :         : 6         :                
 RESERVED_INPUT               : E22       :        :                   :         : 6         :                
 btn[1]                       : F1        : input  : 2.5 V             :         : 1         : Y              
 RESERVED_INPUT               : F2        :        :                   :         : 1         :                
@@ -238,7 +238,7 @@ seg0[6]                      : F13       : output : 2.5 V             :         
 seg2[6]                      : F14       : output : 2.5 V             :         : 7         : Y              
 seg3[1]                      : F15       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT               : F16       :        :                   :         : 7         :                
-RESERVED_INPUT               : F17       :        :                   :         : 6         :                
+count_value[9]               : F17       : output : 2.5 V             :         : 6         : N              
 VCCA2                        : F18       : power  :                   : 2.5V    :           :                
 RESERVED_INPUT               : F19       :        :                   :         : 6         :                
 RESERVED_INPUT               : F20       :        :                   :         : 6         :                
@@ -256,8 +256,8 @@ RESERVED_INPUT               : G9        :        :                   :         
 RESERVED_INPUT               : G10       :        :                   :         : 8         :                
 RESERVED_INPUT               : G11       :        :                   :         : 8         :                
 seg0[4]                      : G12       : output : 2.5 V             :         : 7         : Y              
-count_value[13]              : G13       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT               : G14       :        :                   :         : 7         :                
+count_value[2]               : G13       : output : 2.5 V             :         : 7         : N              
+count_value[3]               : G14       : output : 2.5 V             :         : 7         : N              
 seg3[6]                      : G15       : output : 2.5 V             :         : 7         : Y              
 seg3[7]                      : G16       : output : 2.5 V             :         : 7         : Y              
 RESERVED_INPUT               : G17       :        :                   :         : 6         :                
@@ -276,11 +276,11 @@ RESERVED_INPUT               : H7        :        :                   :         
 GND                          : H8        : gnd    :                   :         :           :                
 RESERVED_INPUT               : H9        :        :                   :         : 8         :                
 RESERVED_INPUT               : H10       :        :                   :         : 8         :                
-count_value[2]               : H11       : output : 2.5 V             :         : 8         : N              
+count_value[0]               : H11       : output : 2.5 V             :         : 8         : N              
 seg0[2]                      : H12       : output : 2.5 V             :         : 7         : Y              
 seg0[3]                      : H13       : output : 2.5 V             :         : 7         : Y              
-RESERVED_INPUT               : H14       :        :                   :         : 7         :                
-RESERVED_INPUT               : H15       :        :                   :         : 7         :                
+count_value[4]               : H14       : output : 2.5 V             :         : 7         : N              
+count_value[8]               : H15       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT               : H16       :        :                   :         : 6         :                
 RESERVED_INPUT               : H17       :        :                   :         : 6         :                
 RESERVED_INPUT               : H18       :        :                   :         : 6         :                
